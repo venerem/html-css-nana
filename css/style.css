@@ -58,9 +58,7 @@ footer {
 
 section section {
     display: flex;
-    justify-content: space-between;   
-    background-color:#ffa801;
-    padding: 15px
+    flex-wrap : wrap;
 }
 
 article {
@@ -103,6 +101,8 @@ h1,
 h2 {
     
     text-align: center;
+    width: 100%;
+
 }
 
 #sectionP {
@@ -119,8 +119,9 @@ a:hover{
     background:olive;
 }
 
-{
-section section 
+
+section section {
     display:flex;
     flex-wrap:wrap;
 }
+
