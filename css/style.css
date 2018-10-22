@@ -15,7 +15,7 @@ h3 {
 }
 
 body {
-    background-color: #575fcf;
+    background:rgba(20,20,20,0.2);
     margin: auto;
     width: 90%;
     min-width: 320px;
@@ -28,7 +28,7 @@ body {
 aside {
     width: 30%;
     min-width: 210px;
-    background-color: orchid;
+    background:rgba(20,20,20,0.2);
     padding: 15px;
     flex-grow: 1;
     flex-shrink: 1;
@@ -36,17 +36,16 @@ aside {
 }
 
 header {
-    background-color: #ffa801;
+    background:rgba(20,20,20,0.2);
     padding: 15px;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center; 
 }
 
 nav {
-    background-color: rgb(101, 101, 158);
+    background:rgba(20,20,20,0.2);
     padding: 15px;
     width: 100%;
     display: flex;
@@ -60,11 +59,11 @@ main {
     min-width: 210px;
     flex-shrink: 1;
     flex-grow: 1;
-    margin-bottom: 25px;
+    margin-bottom: 25px
 }
 
 footer {
-    background-color: #ff0101;
+    background:rgba(20,20,20,0.2);
     padding: 15px;
     width: 100%;
     min-width: 210px;
@@ -73,7 +72,7 @@ footer {
 }
 
 article {
-    background-color: #ffa801;
+    background:rgba(20,20,20,0.2);
     /* margin: auto; */
     padding: 15px;
     width: 50%;
@@ -128,7 +127,7 @@ h3 {
 section#sectionP {
     display: flex;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background:rgba(20,20,20,0.2);
     margin-bottom: 50px;
 
 }
@@ -139,13 +138,14 @@ nav#navP {
 }
 
 a:hover {
-    background: olive;
+    background:rgba(20,20,20,0.2);
 }
 
 /* ATTENTION SI ON AJOUTE DES SECTION */
 main section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     min-width: 210px;
 }
 
@@ -153,3 +153,24 @@ main section {
     text-align: center;
     width: 100%;
 } */
+
+section#formP {
+    width: 50%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+p {
+    text-align: center;
+    padding: 15px;
+}
+
+label,
+button{
+    font-family: sans-serif;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
