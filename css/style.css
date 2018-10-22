@@ -1,36 +1,41 @@
 body,
-header,
-main,
-aside,
-footer,
-section,
 article,
+aside,
+section,
+main,
+header,
+footer,
+nav,
+a,
+p,
 h1,
 h2,
-h3,
-p,
-a,
-nav {
+h3 {
     box-sizing: border-box;
 }
 
 body {
-    background-color:#575fcf;
+    background-color: #575fcf;
     margin: auto;
     width: 90%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
 aside {
-    background-color:orchid ;
-    margin-bottom: 50px;
-    padding: 15px;
     width: 30%;
-    min-width: 300px;
+    min-width: 210px;
+    background-color: orchid;
+    padding: 15px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 header {
-    background-color:#ffa801 ;
+    background-color: #ffa801;
     padding: 15px;
     margin-bottom: 50px;
     display: flex;
@@ -39,33 +44,39 @@ header {
 }
 
 nav {
-    background-color:rgb(101, 101, 158);
+    background-color: rgb(101, 101, 158);
     padding: 15px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
+    margin: auto;
     padding: 15px;
-    margin-bottom: 50px;
     width: 70%;
-    min-width: 300px;
+    min-width: 210px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 footer {
-    background-color:#ff0101 ;
+    background-color: #ff0101;
     padding: 15px;
-    width: 70%;
-}
-
-section section {
-    display: flex;
-    flex-wrap : wrap;
+    width: 100%;
+    min-width: 210px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 article {
-    padding: 15px;
-    width:50%;
     background-color: #ffa801;
+    margin: auto;
+    padding: 15px;
+    width: 50%;
+    min-width: 210px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 h1,
@@ -88,42 +99,44 @@ a p {
     margin: 0;
 }
 
-#titreP {
+p#titreP {
     font-size: 2.5em;
     text-align: center;
     margin: 15px;
 }
 
 h1,
-h2 {
-    
+h2,
+h3 {
     text-align: center;
     width: 100%;
-
 }
 
-#sectionP {
+section#sectionP {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     background-color: aliceblue;
+    margin-bottom: 50px;
+
 }
 
-#navP {
+nav#navP {
     display: flex;
+    flex-wrap: wrap;
 }
 
-a:hover{
-    background:olive;
+a:hover {
+    background: olive;
 }
 
-
+/* ATTENTION SI ON AJOUTE DES SECTION */
 section section {
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 210px;
 }
 
-#articleP {
+/* article#articleP {
     text-align: center;
-    width: 100%
-}
+    width: 100%;
+} */
