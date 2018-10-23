@@ -81,6 +81,10 @@ article {
     flex-shrink: 1;
 }
 
+article p{
+    text-align: justify;
+}
+
 h1,
 h2,
 h3,
@@ -174,3 +178,15 @@ input {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
+/*insertion tableau aside*/
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    background:rgba(20,20,20,0.2);
+}
+
